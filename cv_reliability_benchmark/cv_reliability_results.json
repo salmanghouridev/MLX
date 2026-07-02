@@ -1,0 +1,219 @@
+{
+  "baseline": {
+    "class_id": 841,
+    "class_name": "sweatshirt",
+    "confidence": 0.27734583616256714,
+    "preprocessing_time_ms": 2.6977499946951866,
+    "inference_time_ms": 2561.5935410023667
+  },
+  "benchmarks": {
+    "Gaussian Noise": [
+      {
+        "severity": 1,
+        "corruption_time_ms": 12.012709004920907,
+        "preprocessing_time_ms": 1.7892080068122596,
+        "inference_time_ms": 7.552833994850516,
+        "predicted_class_id": 841,
+        "predicted_class_name": "sweatshirt",
+        "confidence": 0.2686672806739807,
+        "label_drifted": false
+      },
+      {
+        "severity": 2,
+        "corruption_time_ms": 11.371708998922259,
+        "preprocessing_time_ms": 1.5594580036122352,
+        "inference_time_ms": 6.903957997565158,
+        "predicted_class_id": 474,
+        "predicted_class_name": "cardigan",
+        "confidence": 0.11689974367618561,
+        "label_drifted": true
+      },
+      {
+        "severity": 3,
+        "corruption_time_ms": 11.582042003283277,
+        "preprocessing_time_ms": 1.795583011698909,
+        "inference_time_ms": 6.712374990456738,
+        "predicted_class_id": 887,
+        "predicted_class_name": "vestment",
+        "confidence": 0.2555082440376282,
+        "label_drifted": true
+      },
+      {
+        "severity": 4,
+        "corruption_time_ms": 11.397416004911065,
+        "preprocessing_time_ms": 1.4190420042723417,
+        "inference_time_ms": 6.444040991482325,
+        "predicted_class_id": 501,
+        "predicted_class_name": "cloak",
+        "confidence": 0.22048231959342957,
+        "label_drifted": true
+      },
+      {
+        "severity": 5,
+        "corruption_time_ms": 11.82866700401064,
+        "preprocessing_time_ms": 1.714124999125488,
+        "inference_time_ms": 7.229166993056424,
+        "predicted_class_id": 501,
+        "predicted_class_name": "cloak",
+        "confidence": 0.14308062195777893,
+        "label_drifted": true
+      }
+    ],
+    "Gaussian Blur": [
+      {
+        "severity": 1,
+        "corruption_time_ms": 0.371916001313366,
+        "preprocessing_time_ms": 1.0731669899541885,
+        "inference_time_ms": 6.309707998298109,
+        "predicted_class_id": 841,
+        "predicted_class_name": "sweatshirt",
+        "confidence": 0.4983905553817749,
+        "label_drifted": false
+      },
+      {
+        "severity": 2,
+        "corruption_time_ms": 0.18575000285636634,
+        "preprocessing_time_ms": 0.8584999886807054,
+        "inference_time_ms": 6.99641699611675,
+        "predicted_class_id": 841,
+        "predicted_class_name": "sweatshirt",
+        "confidence": 0.6239207983016968,
+        "label_drifted": false
+      },
+      {
+        "severity": 3,
+        "corruption_time_ms": 0.674000009894371,
+        "preprocessing_time_ms": 1.22637499589473,
+        "inference_time_ms": 6.175041009555571,
+        "predicted_class_id": 841,
+        "predicted_class_name": "sweatshirt",
+        "confidence": 0.6871803998947144,
+        "label_drifted": false
+      },
+      {
+        "severity": 4,
+        "corruption_time_ms": 0.937249991693534,
+        "preprocessing_time_ms": 1.444249995984137,
+        "inference_time_ms": 6.022625006153248,
+        "predicted_class_id": 841,
+        "predicted_class_name": "sweatshirt",
+        "confidence": 0.6955056190490723,
+        "label_drifted": false
+      },
+      {
+        "severity": 5,
+        "corruption_time_ms": 0.5436669889604673,
+        "preprocessing_time_ms": 1.0361660097260028,
+        "inference_time_ms": 5.982000002404675,
+        "predicted_class_id": 841,
+        "predicted_class_name": "sweatshirt",
+        "confidence": 0.6613383293151855,
+        "label_drifted": false
+      }
+    ],
+    "JPEG Compression": [
+      {
+        "severity": 1,
+        "corruption_time_ms": 1.405000002705492,
+        "preprocessing_time_ms": 1.241000005393289,
+        "inference_time_ms": 5.979124995064922,
+        "predicted_class_id": 841,
+        "predicted_class_name": "sweatshirt",
+        "confidence": 0.31138309836387634,
+        "label_drifted": false
+      },
+      {
+        "severity": 2,
+        "corruption_time_ms": 1.1973329965258017,
+        "preprocessing_time_ms": 1.212166011100635,
+        "inference_time_ms": 5.987166005070321,
+        "predicted_class_id": 474,
+        "predicted_class_name": "cardigan",
+        "confidence": 0.46888402104377747,
+        "label_drifted": true
+      },
+      {
+        "severity": 3,
+        "corruption_time_ms": 0.9984170028474182,
+        "preprocessing_time_ms": 1.4172910014167428,
+        "inference_time_ms": 5.878334006411023,
+        "predicted_class_id": 841,
+        "predicted_class_name": "sweatshirt",
+        "confidence": 0.3372983932495117,
+        "label_drifted": false
+      },
+      {
+        "severity": 4,
+        "corruption_time_ms": 0.9345419966848567,
+        "preprocessing_time_ms": 1.186666006105952,
+        "inference_time_ms": 6.2388749938691035,
+        "predicted_class_id": 841,
+        "predicted_class_name": "sweatshirt",
+        "confidence": 0.34970352053642273,
+        "label_drifted": false
+      },
+      {
+        "severity": 5,
+        "corruption_time_ms": 0.6756249931640923,
+        "preprocessing_time_ms": 1.2232079898240045,
+        "inference_time_ms": 5.846208005095832,
+        "predicted_class_id": 400,
+        "predicted_class_name": "academic gown",
+        "confidence": 0.2857077419757843,
+        "label_drifted": true
+      }
+    ],
+    "Contrast Loss": [
+      {
+        "severity": 1,
+        "corruption_time_ms": 0.2098340046359226,
+        "preprocessing_time_ms": 1.0799590090755373,
+        "inference_time_ms": 5.966958007775247,
+        "predicted_class_id": 474,
+        "predicted_class_name": "cardigan",
+        "confidence": 0.3084124028682709,
+        "label_drifted": true
+      },
+      {
+        "severity": 2,
+        "corruption_time_ms": 0.12275000335648656,
+        "preprocessing_time_ms": 0.9648339910199866,
+        "inference_time_ms": 5.915582994930446,
+        "predicted_class_id": 474,
+        "predicted_class_name": "cardigan",
+        "confidence": 0.3276689648628235,
+        "label_drifted": true
+      },
+      {
+        "severity": 3,
+        "corruption_time_ms": 0.1475409953854978,
+        "preprocessing_time_ms": 0.8735839946893975,
+        "inference_time_ms": 5.822916005854495,
+        "predicted_class_id": 474,
+        "predicted_class_name": "cardigan",
+        "confidence": 0.3028448820114136,
+        "label_drifted": true
+      },
+      {
+        "severity": 4,
+        "corruption_time_ms": 0.11666699720080942,
+        "preprocessing_time_ms": 0.9934590052580461,
+        "inference_time_ms": 5.9122499951627105,
+        "predicted_class_id": 474,
+        "predicted_class_name": "cardigan",
+        "confidence": 0.3223828673362732,
+        "label_drifted": true
+      },
+      {
+        "severity": 5,
+        "corruption_time_ms": 0.23245900229085237,
+        "preprocessing_time_ms": 1.0963749955408275,
+        "inference_time_ms": 5.710833007469773,
+        "predicted_class_id": 841,
+        "predicted_class_name": "sweatshirt",
+        "confidence": 0.28616809844970703,
+        "label_drifted": false
+      }
+    ]
+  }
+}

@@ -2,7 +2,7 @@
 
 As an **AI Reliability Engineer**, your CV should highlight projects that focus on **performance optimization, resource efficiency, latency profiling, high availability, and benchmarking**. 
 
-Here are **4 high-impact projects** tailored specifically for your role, utilizing the MLX setup we have built in this workspace.
+Here are **6 high-impact projects** tailored specifically for your role, utilizing the MLX setup, OpenCV, and PyTorch/Hugging Face libraries in this workspace.
 
 ---
 
@@ -56,3 +56,32 @@ Here are **4 high-impact projects** tailored specifically for your role, utilizi
 * **AI Reliability CV Highlights**:
   * "Executed stress and load-testing campaigns on edge ML servers, mapping latency distributions (**p99 tail latency**) under concurrent load."
   * "Identified performance bottlenecks on unified memory architectures during stress testing, establishing maximum concurrent worker limits to guarantee <200ms response times."
+
+---
+
+## 📷 Project 5: CV Reliability & Image Corruption Benchmarking (OpenCV)
+*Evaluate Computer Vision model resilience and confidence degradation under environmental noise and hardware preprocessing latencies.*
+
+* **The Project**: A Python pipeline (`cv_reliability_benchmark/cv_benchmark.py`) that:
+  * Uses **OpenCV** to apply real-world image corruptions (Gaussian noise, Gaussian blur, varying JPEG compressions, brightness/contrast adjustments) at escalating severity levels.
+  * Benchmarks model inference (e.g., `MobileNetV3` or ResNet) against the corrupted inputs to record top-1 prediction switches and confidence score degradation.
+  * Profiles critical latency boundaries: CPU-bound OpenCV preprocessing times (resize, color space conversions, tensorization) versus GPU/CPU inference execution times.
+  * Generates visual reliability decay curves using matplotlib showing the exact failure boundaries of the model.
+* **AI Reliability CV Highlights**:
+  * "Designed an automated reliability benchmarking framework using OpenCV to evaluate Computer Vision model resilience against environmental noise (Gaussian blur, compression artifacts), mapping model performance degradation thresholds before deployment."
+  * "Isolated and optimized latency bottlenecks in edge CV pipelines, profiling and reducing OpenCV image preprocessing and scaling overhead by **35%**."
+
+---
+
+## 💬 Project 6: NLP Model Drift, Toxicity, and Latency Guardrail (NLP)
+*Build a pre-inference monitoring system that checks for data drift, filters toxic or adversarial prompts, and profiles latency before downstream API consumption.*
+
+* **The Project**: A lightweight monitoring agent (`nlp_reliability_guardrails/nlp_guardrails.py`) that processes incoming text queries:
+  * **Semantic Drift Detector**: Computes cosine similarity of incoming text embeddings (using a lightweight transformer or TF-IDF) against historical baseline distributions to flag out-of-distribution (OOD) queries.
+  * **Toxicity Filter / Safety Gate**: Implements a lightweight classification model to filter and reject toxic, offensive, or prompt-injection queries prior to hitting expensive LLMs.
+  * **Token & Length Throttling**: Monitors token density (tokens-per-character), total length, and enforces token budget boundaries to prevent Out-Of-Memory (OOM) or latency spikes.
+  * **LLM Latency Profiler**: Measures streaming performance, profiling Time-to-First-Token (TTFT), Inter-Token Latency (ITL), and throughput under synthetic request surges.
+* **AI Reliability CV Highlights**:
+  * "Engineered a pre-inference guardrail gateway for NLP pipelines that dynamically measures semantic data drift, filters adversarial/toxic inputs, and profiles LLM latency metrics (TTFT, ITL), preventing downstream GPU exhaustion."
+  * "Established automated token budget policies and circuit breakers, reducing model Out-of-Memory (OOM) errors due to input size abuse by **100%**."
+
